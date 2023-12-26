@@ -76,6 +76,11 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 
 
+    //paging
+    val paging_version = "3.2.1"
+    implementation("androidx.paging:paging-runtime:$paging_version")
+
+
     //Glide
     implementation("com.github.bumptech.glide:glide:4.14.2")
     annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
@@ -84,7 +89,7 @@ dependencies {
     val lifecycle_version = "2.6.2"
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
-
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
     //Room
 //    val room_version = "2.6.1"

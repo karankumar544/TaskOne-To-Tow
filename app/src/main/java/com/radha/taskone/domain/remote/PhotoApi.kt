@@ -10,10 +10,11 @@ interface PhotoApi {
 
     @GET("services/rest")
     suspend fun getPhotos(
-        @Query("method") methode: String = "flickr.photos.getRecent",
+        @Query("method") methode: String = "flickr.photos.search",
+        @Query("text") text: String ,
         @Query("api_key") apiKey: String = API_KEY,
         @Query("extras") extras: String = "url_s",
-        @Query("per_page") perPage: Int = 20,
+        @Query("per_page") perPage: Int = 100,
         @Query("page") page: Int = 1,
         @Query("format") format: String = "json",
         @Query("nojsoncallback") nojsoncallback: Int = 1,

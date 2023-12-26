@@ -1,9 +1,10 @@
 package com.radha.taskone.domain.repository
 
-import com.radha.taskone.domain.remote.dto.Photos
-import retrofit2.Response
+import androidx.paging.PagingData
+import com.radha.taskone.domain.model.Photo
+import kotlinx.coroutines.flow.Flow
 
 interface PhotoRepository {
 
-    suspend fun getPhotos(): Response<Photos>
+    suspend fun getPhotos(text:String,pageSize:Int): Flow<PagingData<Photo>>
 }

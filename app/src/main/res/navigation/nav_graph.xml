@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.radha.taskone.persentation.basic.FirstFragment"
-        android:label="TaskOne"
+        android:label="TaskTwoInOne"
         tools:layout="@layout/fragment_first">
 
         <action
@@ -28,4 +28,5 @@
             android:name="photo"
             app:argType="com.radha.taskone.domain.model.Photo" />
     </fragment>
+
 </navigation>
